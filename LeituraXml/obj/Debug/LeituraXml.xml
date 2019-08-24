@@ -1,0 +1,37 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+LeituraXml
+</name>
+</assembly>
+<members>
+<member name="T:LeituraXml.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:LeituraXml.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:LeituraXml.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:LeituraXml.Conexao.AddArrayParameters(System.Collections.IEnumerable,System.String,System.String)">
+ <summary>
+ Adiciona um vetor de parametros ao MySqlCommand.
+ </summary>
+ <param name="valores">O vetor de strings que deve ser adicionada aos parametros.</param>
+ <param name="paramNomeBase">Nome dado ao parametro base. Este valor envolta de {} na query (CommandText) vai ser trocado.</param>
+ <example>SELECT * FROM table WHERE field IN ({paramNomeBase})</example>
+ <param name="separador">A string utilizada para separar os parametros na query.</param>
+ <returns>Use o retorno para a parte da query que utiliza o IN.</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>
